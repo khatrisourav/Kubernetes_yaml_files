@@ -1,0 +1,12 @@
+  apiVersion: v1
+  kind: Pod
+  metadata:
+    name: bookingpod
+    labels:
+      app: booking
+  spec:
+    containers:
+     -  name: bookingcontainer
+        image: sam123s/web_booking_image
+        ports:
+         - containerPort: 80
